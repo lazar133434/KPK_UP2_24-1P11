@@ -3,24 +3,31 @@
 |---|---|---|
 |поле | тип | доп. параметры|
 |поле | тип | доп. параметры|
+
 - # LoadAssignment
 |---|---|---|
 |id | Integer | PK|
 |teacher_id | Integer | FK -> Teacher.id|
 |discipline_id | Integer | FK -> Discipline.id|
 |group_id | Integer | FK -> Group.id|
-- semester | Integer | 1-8|
-- load_hours | Decimal(5,2) | >0 |
+|semester | Integer | 1-8|
+|load_hours | Decimal(5,2) | >0 |
+
+  
 - # Teacher
 |---|---|---|
 |id | Integer | PK|
 |full_name | Varchar(200) | NOT NULL, UNIQUE|
 |position | Varchar(100) | NOT NULL|
+
+
 # Discipline
 |---|---|---|
 |id | Integer | PK|
 |name | Varchar(200) | NOT NULL, UNIQUE|
 |hours_total | Integer | NOT NULL |
+
+
 # Group
 |---|---|---|
 |id | Integer | PK|
