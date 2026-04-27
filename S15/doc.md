@@ -10,7 +10,6 @@
 | Поле | Тип | Ограничения |
 |---|---|---|
 | id | Integer | PK |
-| full_name | Varchar | NOT NULL |
 | student_number | Varchar | UNIQUE |
 | current_group_id | Integer | FK |
 | status | Varchar | NOT NULL |
